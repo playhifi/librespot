@@ -359,7 +359,7 @@ fn get_setup(args: &[String]) -> Setup {
     .optopt(
         "",
         NORMALISATION_GAIN_TYPE,
-        "Specify the normalisation gain type to use {track|album}. Defaults to album.",
+        "Specify the normalisation gain type to use {track|album|auto}. Defaults to auto.",
         "TYPE",
     )
     .optopt(
@@ -371,7 +371,7 @@ fn get_setup(args: &[String]) -> Setup {
     .optopt(
         "",
         NORMALISATION_THRESHOLD,
-        "Threshold (dBFS) to prevent clipping. Defaults to -1.0.",
+        "Threshold (dBFS) to prevent clipping. Defaults to -2.0.",
         "THRESHOLD",
     )
     .optopt(
